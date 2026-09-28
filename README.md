@@ -15,7 +15,7 @@ Fdroid içinden termux uygulamasını aratın ve onu indirin.
 
 Termuxa girin ve sırayla bu işlemleri yapın:
 
-	Komutları girin:
+	# Komutları girin:
 
 	pkg update && pkg upgrade -y
 
@@ -27,11 +27,11 @@ Termuxa girin ve sırayla bu işlemleri yapın:
 
 	termux-setup-storage
 
-		Bu komutu girdiğinizde sizden dosya izni isteyecektir onu onaylayıp tekrar aynı komutu girin ve Y yazıp devam edin
+		#Bu komutu girdiğinizde sizden dosya izni isteyecektir onu onaylayıp tekrar aynı komutu girin ve Y yazıp devam edin
 
 	cd ~/storage/shared/Download/Telegram
 
-		Eğer kodu telegramdan indirdiyseniz bu dizinde olacak.
+		#Eğer kodu telegramdan indirdiyseniz bu dizinde olacak.
 
 	python dobrachat.py
 
@@ -55,17 +55,19 @@ Burada kendi sunucumdan örnek verdim. Siz hangi sunucuya bağlanacaksanız sahi
 
 HESAP AÇMA:
 
-	BAŞLANGIÇ İÇİN NOT: Matrix sunucu ayarlarında hesap açma kapalıysa aşağıdaki yöntem çalışmayacaktır. Sunucu sahibinden sizin için hesap oluşturmasını isteyin.
+	# BAŞLANGIÇ İÇİN NOT: Matrix sunucu ayarlarında hesap açma kapalıysa aşağıdaki yöntem çalışmayacaktır. Sunucu sahibinden sizin için hesap oluşturmasını isteyin.
 
-		Hesap açma komutu (sunucu sahibi tarafından girilmeli):
+		# Hesap açma komutu (sunucu sahibi tarafından girilmeli):
 
 		cd ~/go/pkg/mod/github.com/matrix-org/dendrite@v0.13.8/cmd/create-account
 
 		sudo go run . -config /etc/dendrite/dendrite.yaml -username test2 -password testtest
 
-	Termux'u açın: python dobrahesap.py
+Termux'u açın: 
+	
+	python dobrahesap.py
 
-	Oradaki sorulara cevap verin, örnek:
+	# Oradaki sorulara cevap verin, örnek:
 
 		=== DobraCHAT Matrix Hesap Oluşturma Aracı ===
 
